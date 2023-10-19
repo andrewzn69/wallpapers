@@ -17,7 +17,7 @@ def generate_readme(directory):
             # Create the links
             file_name, file_extension = os.path.splitext(file)
             print(file_name)
-            readme_content += f"[{file_name}]({github_repo_url})\n"
+            readme_content += f"[{file_name}]({github_repo_url}{file_name})\n"
             readme_content += f"![{file_name}]({directory}/{file})\n---\n"
 
     return readme_content
