@@ -8,9 +8,12 @@ on:
 jobs:
   generate-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Install Google Fonts
@@ -26,5 +29,20 @@ jobs:
           sudo apt-get install -y imagemagick
         shell: bash
 
-      - name: Run the script
+      - name: Generate Previews
         run: bash .github/workflows/generate-gallery.sh
+
+      - name: Build
+        run: python .github/workflows/generate-readme.py
+
+      - name: Commit
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          COMMIT_MSG: |
+            docs(README): Generated readme
+        run: |
+          git config user.email "actions@github"
+          git config user.name "Github Actions"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "${COMMIT_MSG}"; git push origin HEAD:${GITHUB_REF})
