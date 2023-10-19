@@ -23,6 +23,7 @@ jobs:
           mv ubuntu /usr/share/fonts
           fc-cache -fv
           fc-list | grep Ubuntu
+          rm -r Ubuntu.zip
 
       - name: Set up ImageMagick
         run: |
