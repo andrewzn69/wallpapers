@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# easier for debugging
+set -x
+
 # create output dir
 mkdir -p output
 
