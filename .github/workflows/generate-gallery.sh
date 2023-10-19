@@ -7,7 +7,7 @@ set -x
 mkdir -p output
 
 # loop through the subdirectories
-for dir in /../*; do
+for dir in *; do
 	if [ -d "$dir" ]; then
 		folder_name=$(basename "$dir")
 		montage_images=()
