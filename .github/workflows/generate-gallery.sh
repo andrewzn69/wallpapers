@@ -48,6 +48,8 @@ for dir in ../../*; do
 				"${montage_images[@]}" "output/$folder_name.png"
 		fi
 
+		ls output
+
 		# rm tempdir
 		rm -rf "$tempdir"
 	fi
