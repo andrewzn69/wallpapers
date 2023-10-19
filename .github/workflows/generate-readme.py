@@ -1,7 +1,7 @@
 import os
 
 # Directory containing the images
-image_directory = 'output'
+image_directory = 'previews'
 
 # URL of the GitHub repository
 github_repo_url = 'https://github.com/andrewzn69/wallpapers/tree/main/'

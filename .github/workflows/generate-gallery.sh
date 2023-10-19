@@ -4,7 +4,7 @@
 set -x
 
 # create output dir
-mkdir -p output
+mkdir -p previews
 
 # loop through the subdirectories
 for dir in *; do
@@ -39,16 +39,16 @@ for dir in *; do
 			fi
 		done
 
-		if [ "$folder_name" != "output" ]; then
+		if [ "$folder_name" != "previews" ]; then
 			# create the montage
 			montage -background '#262626' \
 				-mode concatenate \
 				-tile 7x \
 				-geometry +5+5 \
-				"${montage_images[@]}" "output/$folder_name.png"
+				"${montage_images[@]}" "previews/$folder_name.png"
 		fi
 
-		ls output
+		ls previews
 
 		# rm tempdir
 		rm -rf "$tempdir"
