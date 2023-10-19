@@ -13,9 +13,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Install Google Fonts
+        run: |
+          wget -O Ubuntu.zip https://fonts.google.com/download?family=Ubuntu
+          unzip -d ubuntu/ Ubuntu.zip
+          mv ubuntu /usr/share/fonts
+          fc-cache -fv
+          fc-list | grep Ubuntu
+
       - name: Set up ImageMagick
         run: |
-          sudo apt-get update
           sudo apt-get install -y imagemagick
         shell: bash
 
