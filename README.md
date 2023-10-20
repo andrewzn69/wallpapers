@@ -9,8 +9,14 @@
 [catpuccin](https://github.com/andrewzn69/wallpapers/tree/main/catpuccin)
 ![catpuccin](previews/catpuccin.png)
 ---
+[monochrome](https://github.com/andrewzn69/wallpapers/tree/main/monochrome)
+![monochrome](previews/monochrome.png)
+---
 [gruvbox](https://github.com/andrewzn69/wallpapers/tree/main/gruvbox)
 ![gruvbox](previews/gruvbox.png)
+---
+[halloween](https://github.com/andrewzn69/wallpapers/tree/main/halloween)
+![halloween](previews/halloween.png)
 ---
 [onedark](https://github.com/andrewzn69/wallpapers/tree/main/onedark)
 ![onedark](previews/onedark.png)
