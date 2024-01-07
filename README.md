@@ -18,6 +18,9 @@
 [halloween](https://github.com/andrewzn69/wallpapers/tree/main/halloween)
 ![halloween](previews/halloween.png)
 ---
+[uncategorized](https://github.com/andrewzn69/wallpapers/tree/main/uncategorized)
+![uncategorized](previews/uncategorized.png)
+---
 [nord](https://github.com/andrewzn69/wallpapers/tree/main/nord)
 ![nord](previews/nord.png)
 ---
