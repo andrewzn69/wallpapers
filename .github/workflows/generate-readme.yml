@@ -18,7 +18,7 @@ jobs:
 
       - name: Install Google Fonts
         run: |
-          wget -O Ubuntu.zip https://fonts.google.com/download?family=Ubuntu
+          wget -O Ubuntu.zip https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
           unzip -d ubuntu/ Ubuntu.zip
           mv ubuntu /usr/share/fonts
           fc-cache -fv
