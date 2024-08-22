@@ -29,7 +29,7 @@ for dir in *; do
 					-resize 300x300 \
 					-fill '#d0d0d0' \
 					-bordercolor '#262626' \
-					-font 'Ubuntu-R' \
+					-font '/usr/shareubuntu/ubuntu-font-family-0.83/Ubuntu-R.ttf' \
 					-border 5x30 \
 					-gravity South \
 					-pointsize 18 \
