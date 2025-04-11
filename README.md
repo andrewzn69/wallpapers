@@ -6,6 +6,9 @@
 [halloween](https://github.com/andrewzn69/wallpapers/tree/main/halloween)
 ![halloween](previews/halloween.png)
 ---
+[fantasy](https://github.com/andrewzn69/wallpapers/tree/main/fantasy)
+![fantasy](previews/fantasy.png)
+---
 [sand](https://github.com/andrewzn69/wallpapers/tree/main/sand)
 ![sand](previews/sand.png)
 ---
